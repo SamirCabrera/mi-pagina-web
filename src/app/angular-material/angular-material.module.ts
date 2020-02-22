@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FormsModule, ReactiveFormsModule} from '@angular/forms';
+
 import {MatTabsModule} from '@angular/material/tabs';
 import {A11yModule} from '@angular/cdk/a11y';
 import {ClipboardModule} from '@angular/cdk/clipboard';
@@ -42,13 +44,18 @@ import {MatTableModule} from '@angular/material/table';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatTreeModule} from '@angular/material/tree';
+import {MatFormFieldModule} from '@angular/material/form-field';
 
 
 
 @NgModule({
   declarations: [],
   imports: [
-    CommonModule
+    CommonModule,
+    FormsModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
+    ReactiveFormsModule
   ],
   exports: [
     MatTabsModule, A11yModule, ClipboardModule, DragDropModule, PortalModule, ScrollingModule, CdkStepperModule,
@@ -57,7 +64,7 @@ import {MatTreeModule} from '@angular/material/tree';
     MatDialogModule, MatDividerModule, MatExpansionModule, MatGridListModule, MatIconModule, MatInputModule,
     MatListModule, MatMenuModule, MatNativeDateModule, MatRippleModule, MatPaginatorModule, MatProgressBarModule,
     MatProgressSpinnerModule, MatRadioModule, MatSelectModule, MatSidenavModule, MatSliderModule, MatSlideToggleModule,
-    MatSnackBarModule, MatSortModule, MatTableModule, MatToolbarModule, MatTooltipModule, MatTreeModule
+    MatSnackBarModule, MatSortModule, MatTableModule, MatToolbarModule, MatTooltipModule, MatTreeModule, MatFormFieldModule
   ]
 })
 export class AngularMaterialModule { }

@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { AngularMaterialModule } from './angular-material/angular-material.module'
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { ComponentsModule } from './components/components.module';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -11,13 +12,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 // Componentes
 import { HomeComponent } from './pages/home/home.component';
 import { HomepageComponent } from './pages/homepage/homepage.component';
+import { LoginComponent } from './pages/homepage/login/login.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent, 
-    HomepageComponent
+    HomepageComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -25,7 +28,8 @@ import { HomepageComponent } from './pages/homepage/homepage.component';
     BrowserAnimationsModule,
     AngularMaterialModule,
     RouterModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    ComponentsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

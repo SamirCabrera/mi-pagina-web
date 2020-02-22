@@ -1,8 +1,42 @@
 .main_div {
     margin: 56px 86px;
     box-shadow: 1px 1px 16px 5px rgba(0, 0, 0, 0.2), 0px 1px 28px 20px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    border-radius: 20px;
 }
 
 .mat-grid-tile_logo {
     background-color: brown;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.mat-grid-tile_login {
+    background-color: white;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.mat_card {
+    width: 60%;
+    height: 60%;
+    box-shadow: none;
+}
+
+::ng-deep .mat-tab-labels {
+    padding: 0px 110px;
+}
+
+::ng-deep .mat-tab-label {
+    opacity: 0.5 !important;
+    color: black
+}
+
+::ng-deep .mat-tab-label:focus:not(.mat-tab-disabled) {
+    opacity: 1 !important;
+    color: black;
+}
+
+::ng-deep .mat-tab-header-pagination-controls-enabled .mat-tab-header-pagination {
+    background-color: black;
+    border-radius: 20px;
 }

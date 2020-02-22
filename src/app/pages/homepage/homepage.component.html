@@ -1,23 +1,38 @@
 <div>
+    <div>
 
-    <div class="main_div">
-        
-        <mat-grid-list cols="12" rowHeight="300px">
+        <div class="main_div">
+            
+            <mat-grid-list cols="12" rowHeight="325px">
+    
+                <mat-grid-tile [colspan]="4"
+                    [rowspan]="2"
+                    class="mat-grid-tile_logo">
+                  
+                </mat-grid-tile>
+    
+                <mat-grid-tile [colspan]="8"
+                    [rowspan]="2"
+                    class="mat-grid-tile_login">
 
-            <mat-grid-tile [colspan]="3"
-                [rowspan]="2"
-                class="mat-grid-tile_logo">
-              
-            </mat-grid-tile>
+                    <mat-card class="mat_card">
+                        <mat-tab-group>
 
-            <mat-grid-tile [colspan]="9"
-                [rowspan]="2"
-            style="background-color: white;">
+                            <mat-tab label="Login">
+                                <app-login></app-login>
+                            </mat-tab>
 
-            </mat-grid-tile>
+                            <mat-tab label="Register"> Content 2 </mat-tab>
 
-          </mat-grid-list>
+                          </mat-tab-group>
+                    </mat-card>
 
+                </mat-grid-tile>
+    
+              </mat-grid-list>
+    
+        </div>
+    
     </div>
-
 </div>
+
