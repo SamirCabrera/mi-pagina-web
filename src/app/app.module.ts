@@ -13,6 +13,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './pages/home/home.component';
 import { HomepageComponent } from './pages/homepage/homepage.component';
 import { LoginComponent } from './pages/homepage/login/login.component';
+import { RegisterComponent } from './pages/homepage/register/register.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { LoginComponent } from './pages/homepage/login/login.component';
     AppComponent,
     HomeComponent, 
     HomepageComponent,
-    LoginComponent
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,

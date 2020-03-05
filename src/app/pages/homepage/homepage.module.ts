@@ -5,10 +5,11 @@ import { AngularMaterialModule } from '../../angular-material/angular-material.m
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { ComponentsModule } from '../../components/components.module';
 import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
 
 
 @NgModule({
-  declarations: [HomepageComponent, LoginComponent],
+  declarations: [HomepageComponent, LoginComponent, RegisterComponent],
   imports: [
     CommonModule,
     AngularMaterialModule,

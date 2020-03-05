@@ -1,0 +1,19 @@
+<form class="example-form">
+
+    <mat-form-field class="mat_form">
+
+      <mat-label>Nombre de usuario</mat-label>
+
+      <input matInput [formControl]="emailFormControl" 
+        [errorStateMatcher]="matcher"
+        placeholder="">
+
+      <mat-hint *ngIf="!emailFormControl.hasError('maxLength(10)')">Ingrese un nombre de usuario</mat-hint>
+
+      <mat-error *ngIf="!emailFormControl.hasError('maxLength(10)')">
+        El maximo de letras para el usuario es de <strong> 10 </strong>
+      </mat-error>
+
+    </mat-form-field>
+
+  </form>
