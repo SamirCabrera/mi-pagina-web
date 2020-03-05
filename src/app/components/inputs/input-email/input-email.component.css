@@ -2,3 +2,14 @@
     display: block;
 }
 
+.mat_label {
+    color: black;
+}
+
+::ng-deep .mat-form-field-appearance-legacy .mat-form-field-label {
+    color: black;
+}
+
+::ng-deep .mat-form-field-underline {
+        background-color: black !important;
+} 
