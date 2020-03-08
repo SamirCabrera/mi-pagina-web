@@ -1,1 +1,84 @@
-<p>home works!</p>
+<div class="div_cabecera">
+    <div class="div_nav"> 
+
+        <mat-toolbar class="toolbar"> 
+
+            <mat-toolbar-row>
+                
+                <div class="div_img">
+
+                    <img src="../../../assets/img/logo-sin-fondo-a-negro.png" alt=""
+                        class="img">
+
+                </div>
+
+                <div class="div_menu">
+
+                    <mat-list role="list">
+                        <mat-list-item role="listitem"
+                            *ngFor="let lists of list">
+                            {{ lists.name }}
+                        </mat-list-item>
+                    </mat-list>
+                    
+                </div>
+
+                <div class="div_icon">
+
+                    <mat-icon class="icon_nav" aria-hidden="false" aria-label="Example heart icon">shopping_cart</mat-icon>
+                    <mat-icon class="icon_nav" aria-hidden="false" aria-label="Example delete icon">person</mat-icon>
+                 
+                </div>
+
+            </mat-toolbar-row>
+    
+        </mat-toolbar>
+
+    </div>
+
+    <div class="div_info_cabecera"> 
+
+        <mat-grid-list cols="12"
+            rowHeight="100px">
+
+            <mat-grid-tile *ngFor="let grid of matGrid"
+                [colspan]="grid.cols"
+                [rowspan]="grid.rows">
+
+                <div *ngIf="grid.title === true">
+
+                    <div class="change"
+                        *ngFor="let titles of titleImgCabecera">
+
+                        <mat-label>
+                            {{ titles.title }}
+                        </mat-label>
+
+                    </div>
+
+                </div>
+
+                <div *ngIf="grid.description === true"></div>
+
+                <div *ngIf="grid.boton === true"></div>
+
+                <div *ngIf="grid.img === true"
+                    style="background-color: red;">
+                    
+                    <figure class="icon-cards mt-3">
+
+                        <div class="icon-cards__item d-flex align-items-center justify-content-center"
+                        *ngFor="let titles of titleImgCabecera">
+                            {{ titles.title }}
+                        </div>
+
+                    </figure>
+
+                </div>
+
+            </mat-grid-tile>
+
+        </mat-grid-list>
+    </div>
+
+</div>
