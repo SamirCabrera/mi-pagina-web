@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-home',
@@ -66,19 +66,16 @@ export class HomeComponent implements OnInit {
 
   private titleImg() {
     this.titleImgCabecera = [
-      {
-        title: 'Messi 97'
-      },
-      {
-        title: 'CR7 201'
-      },
-      {
-        title: 'LeBron Ax'
-      },
-      {
-        title: 'Curry25'
-      },
+      'https://placeimg.com/300/300/nature/6',
+      'https://placeimg.com/300/300/nature/7',
+      'https://placeimg.com/300/300/nature/8',
+      'https://placeimg.com/300/300/nature/9',
+      'https://placeimg.com/300/300/nature/2',
+      'https://placeimg.com/300/300/nature/3',
+      'https://placeimg.com/300/300/nature/1',
     ]
   }
+
+  
 
 }

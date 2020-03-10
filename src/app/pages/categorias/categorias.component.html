@@ -1,0 +1,17 @@
+<div class="row">
+
+    <app-slider3d [slides]="slides"
+        [options]="options"
+        class="col-12"
+        #carousel>
+
+        <app-slider *ngFor="let slide of slides; let i = index"
+            (click)="slideClicked(i)">
+
+            <img src="{{slide.src}}" class="slide-img">
+
+        </app-slider>
+        
+    </app-slider3d>
+
+</div>

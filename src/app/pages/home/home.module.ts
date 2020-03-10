@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home.component';
+import { NguCarouselModule } from '@ngu/carousel';
 import { AngularMaterialModule } from '../../angular-material/angular-material.module';
 
 
@@ -8,7 +9,8 @@ import { AngularMaterialModule } from '../../angular-material/angular-material.m
   declarations: [HomeComponent],
   imports: [
     CommonModule,
-    AngularMaterialModule
+    AngularMaterialModule,
+    NguCarouselModule
   ]
 })
 export class HomeModule { }

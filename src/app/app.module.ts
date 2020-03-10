@@ -8,12 +8,14 @@ import { ComponentsModule } from './components/components.module';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NguCarouselModule } from '@ngu/carousel';
 
 // Componentes
 import { HomeComponent } from './pages/home/home.component';
 import { HomepageComponent } from './pages/homepage/homepage.component';
 import { LoginComponent } from './pages/homepage/login/login.component';
 import { RegisterComponent } from './pages/homepage/register/register.component';
+import { CategoriasComponent } from './pages/categorias/categorias.component';
 
 
 @NgModule({
@@ -22,7 +24,8 @@ import { RegisterComponent } from './pages/homepage/register/register.component'
     HomeComponent, 
     HomepageComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    CategoriasComponent
   ],
   imports: [
     BrowserModule,
@@ -31,7 +34,8 @@ import { RegisterComponent } from './pages/homepage/register/register.component'
     AngularMaterialModule,
     RouterModule,
     FlexLayoutModule,
-    ComponentsModule
+    ComponentsModule,
+    NguCarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent]
