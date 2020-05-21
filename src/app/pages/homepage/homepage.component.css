@@ -29,7 +29,8 @@
 
 ::ng-deep .mat-tab-label {
     opacity: 0.5 !important;
-    color: black
+    color: black;
+    padding: 0px 93px !important;
 }
 
 ::ng-deep .mat-tab-label:focus:not(.mat-tab-disabled) {
